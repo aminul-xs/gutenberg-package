@@ -1,21 +1,29 @@
 {
-  "name": "gutenberg-package",
-  "version": "1.0.0",
-  "description": "A package for Gutenberg blocks",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "babel src -d lib"
-  },
-  "keywords": [
-    "gutenberg",
-    "wordpress",
-    "block"
-  ],
-  "author": "Aminul Islam",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.25.7",
-    "@babel/core": "^7.25.7",
-    "@babel/preset-env": "^7.25.7"
-  }
+    "name": "gutenberg-package",
+    "version": "1.0.0",
+    "description": "A package for Gutenberg blocks",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack serve --mode development"
+    },
+    "keywords": [
+        "gutenberg",
+        "wordpress",
+        "block"
+    ],
+    "author": "Aminul Islam",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.25.7",
+        "@babel/core": "^7.25.7",
+        "@babel/preset-env": "^7.25.7",
+        "@babel/preset-react": "^7.25.7",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+        "babel-loader": "^9.2.1",
+        "react-refresh": "^0.14.2",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
+    }
 }
